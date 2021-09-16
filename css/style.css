@@ -6,4 +6,17 @@ button {
   color: violet;
   background-color: slateblue;
   border-radius: 15px;
+  border: none;
+}
+button:not(:last-child) {
+  margin-right: 20px;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  padding: 150px;
 }
