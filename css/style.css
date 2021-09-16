@@ -1,0 +1,9 @@
+button {
+  font-family: Montserrat Alternates;
+  font-weight: 30px;
+  width: 120px;
+  height: 50px;
+  color: violet;
+  background-color: slateblue;
+  border-radius: 15px;
+}
