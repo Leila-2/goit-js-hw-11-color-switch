@@ -26,16 +26,17 @@ const randomIntegerFromInterval = (min, max) => {
 let intervalId = null
 
 function startColorPick() {
-    startBtn.disabled = true;
+
     intervalId = setInterval(() => {
 
         body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)]
     }, 1000)
     startBtn.removeEventListener("click", startColorPick)
-
+    startBtn.disabled = true;
 }
 function stopColorPick() {
-    butStart.disabled = false;
+
     clearInterval(intervalId)
     startBtn.addEventListener("click", startColorPick);
+    startBtn.disabled = false;
 }
